@@ -2,6 +2,7 @@ package raysharp.com.wanandroid.activities;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 
 import com.gyf.barlibrary.ImmersionBar;
 
@@ -17,9 +18,10 @@ public abstract class AbstractSimpleActivity extends SupportActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.e("hao","======layoutID===="+getLayoutId());
         setContentView(getLayoutId());
         ImmersionBar.with(this)
-//                .statusBarView(findViewById(R.id.status_bar_view))
+                .statusBarView(findViewById(R.id.status_bar_view))
                 .keyboardEnable(true)
                 .init();
         unbinder = ButterKnife.bind(this);

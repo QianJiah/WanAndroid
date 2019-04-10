@@ -49,26 +49,6 @@ public abstract class BaseActivity<T extends IPresenter> extends AbstractSimpleA
         }
     }
 
-    @Override
-    protected void initEventAndData() {
-
-    }
-
-    @Override
-    protected void initView() {
-
-    }
-
-    @Override
-    protected void initToolbar() {
-
-    }
-
-    @Override
-    protected int getLayoutId() {
-        return 0;
-    }
-
     /**
      * 重写fragmentation中SupportActivity 的返回键方法
      */

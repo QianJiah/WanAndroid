@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/favorite"
+        android:enabled="true"
+        android:icon="@drawable/ic_like_not_white"
+        android:title="收藏"
+        app:showAsAction="withText"/>
+
+    <item android:id="@+id/todo"
+        android:enabled="true"
+        android:icon="@drawable/ic_todo_default"
+        android:title="TODO"
+        app:showAsAction="withText"/>
+
+    <item android:id="@+id/day_night"
+        android:enabled="true"
+        android:icon="@drawable/ic_night"
+        android:title="夜间模式"
+        app:showAsAction="withText"/>
+
+    <item android:id="@+id/setting"
+        android:enabled="true"
+        android:icon="@drawable/ic_setting"
+        android:title="设置"
+        app:showAsAction="withText"/>
+
+    <item android:id="@+id/about"
+        android:enabled="true"
+        android:icon="@drawable/ic_about"
+        android:title="关于"
+        app:showAsAction="withText"/>
+
+    <item android:id="@+id/logout"
+        android:enabled="true"
+        android:icon="@drawable/ic_logout_24dp"
+        android:title="退出"
+        android:visible="true"
+        app:showAsAction="withText"/>
+</menu>
